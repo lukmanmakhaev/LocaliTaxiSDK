@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "LocaliTaxiSDK",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v16)
     ],
     products: [
         .library(
@@ -22,11 +22,13 @@ let package = Package(
             name: "LocaliTaxiSDK",
             dependencies: [
                 .product(name: "TaxiShared", package: "locali-taxi")
-            ]
+            ],
+            path: "Sources/LocaliTaxiSDK"
         ),
         .testTarget(
             name: "LocaliTaxiSDKTests",
-            dependencies: ["LocaliTaxiSDK"]
+            dependencies: ["LocaliTaxiSDK"],
+            path: "Tests/LocaliTaxiSDKTests"
         )
     ],
     swiftLanguageModes: [.v6]
