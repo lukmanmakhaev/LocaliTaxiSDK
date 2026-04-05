@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/kenuuu-x/locali-taxi.git", from: "0.0.1")
+        .package(url: "https://github.com/kenuuu-x/locali-taxi.git", from: "0.0.2")
     ],
     targets: [
         .target(
