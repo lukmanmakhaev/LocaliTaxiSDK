@@ -1,0 +1,15 @@
+{
+  "originHash" : "12491daf5241219ecf62d042579c881dd4b0878da1b060f529a0ee3d772ca023",
+  "pins" : [
+    {
+      "identity" : "locali-taxi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kenuuu-x/locali-taxi.git",
+      "state" : {
+        "revision" : "ac66aeb194cbcee4e87fe80812e26a7be556dbea",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
