@@ -6,6 +6,8 @@ public enum LocaliTaxiSDK {
     public static func initialize(accessTokenProvider: TaxiAccessTokenProvider) {
         let adapter = KmpTokenProviderAdapter(provider: accessTokenProvider)
         tokenProviderAdapter = adapter
-        TaxiSdk.companion.doInit(tokenProvider: adapter)
+        let sdk = TaxiSdk.companion.doInit(tokenProvider: adapter)
+        print("✅ SDK initialized: \(sdk)")
+        print("✅ Instance check: \(TaxiSdk.companion.instance)")
     }
 }
